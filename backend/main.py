@@ -22,7 +22,7 @@ import time
 
 
 # keys 
-API_KEY = "AIzaSyARnPqvmSD8A-dXq1NQ1DjG2n2CjwAN5nw"
+API_KEY = "API_KEY"
 
 
 # Initialize FastAPI app
@@ -43,7 +43,7 @@ app.add_middleware(
 
 
 # MongoDB connection details
-client = MongoClient('mongodb+srv://root:my^7#kj@cluster0.9podb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+client = MongoClient('MONGO-URL')
 db = client['flight_booking_db']
 collection_flight_bookings = db['flight_bookings']
 collection_flight_dates = db['flight_dates']
